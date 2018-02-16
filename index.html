@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Guessing Game</title>
+    <!-- Bootstrap and CSS here-->
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
+    <link rel='stylesheet' type='text/css' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css'>
+  </head>
+  <body>
+    <div id='app' class = "center container">
+      <div id='headers'>
+        <h1 id= 'title'> <strong>The Number Guessing  Game </strong></h1>
+        <h4 id='subtitle'> <em>Play by guessing a number between 1 & 100</em></h4>
+      </div>
+
+      <div id='main'>
+        <div id='input-parent'>
+          <!-- Player's guess input, and submit button -->
+          <input id= "players-input" class='center' placeholder= "###" autofocus=autofocus maxlength="3">
+          <button id="submit" class='btn btn-success'>Check!</button>
+        </div>
+        <div id='guesses'>
+          <ul id='guess-list'>
+            <li class='guess'>-</li>
+            <li class='guess'>-</li>
+            <li class='guess'>-</li>
+            <li class='guess'>-</li>
+            <li class='guess'>-</li>
+          </ul>
+        </div>
+        <div id="menu-btns">
+          <!-- reset and hint buttons -->
+          <button class='btn-warning' id='reset'>Reset</button>
+          <button class='btn-info' id='hint'>Hint!</button>
+        </div>
+      </div>
+    </div>
+
+    <div id='footer' class='center'>
+        <div class='row'>
+          <div class='col-sm-4'>
+            <img src='images/fa-logo@2x.png'></img>
+          </div>
+          <div class='col-sm-4'>
+            <h4>Project by <i>Elza Abraham <i></h4>
+          </div>
+          <div class='col-sm-4'>
+            <img src='images/grace_hopper_academy.png'></img>
+          </div>
+        </div>
+    </div>
+    <script src="js/GGJQuery.js"></script>
+    <script src="js/GuessingGame.js"></script>
+  </body>
+</html>
